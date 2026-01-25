@@ -2,11 +2,17 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 let box1El = document.getElementById("box1-El")
 let box2El = document.getElementById("box2-El")
-let passwordLength = 15
+let lengthInput = document.getElementById("length-input")
+
 
 function generate() {
-    box1El.textContent = " " 
-    box2El.textContent = " " 
+    passwordLength = Number(lengthInput.value)
+    if (passwordLength > 20) {
+            passwordLength = 20
+            lengthInput.value = 20
+    }
+    box1El.textContent = " " // To clear out box1
+    box2El.textContent = " " // To clear out box2
     for (let i = 0; i < passwordLength; i++) {
         let code = Math.floor(Math.random() * characters.length)
         let code2 = Math.floor(Math.random() * characters.length)
@@ -16,4 +22,3 @@ function generate() {
     
     
 }
-
