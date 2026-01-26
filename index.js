@@ -11,8 +11,8 @@ function generate() {
             passwordLength = 20
             lengthInput.value = 20
     }
-    box1El.textContent = " " // To clear out box1
-    box2El.textContent = " " // To clear out box2
+    box1El.textContent = "" // To clear out box1
+    box2El.textContent = "" // To clear out box2
     for (let i = 0; i < passwordLength; i++) {
         let code = Math.floor(Math.random() * characters.length)
         let code2 = Math.floor(Math.random() * characters.length)
@@ -21,4 +21,22 @@ function generate() {
     }
     
     
+}
+
+
+function copybox1() {
+    console.log("working")
+    const text = box1El.textContent.trim();
+    if (text) {
+        navigator.clipboard.writeText(text);
+        alert("Copied Box 1: " + text);
+    }
+}
+
+function copybox2() {
+    const text = box2El.textContent.trim();
+    if (text) {
+        navigator.clipboard.writeText(text);
+        alert("Copied Box 2: " + text);
+    }
 }

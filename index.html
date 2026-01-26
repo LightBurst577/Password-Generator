@@ -4,17 +4,17 @@
     </head>
     <body>
         <div id="container">
-            <h1>Generate a <br><span class="green">random password</spawn></h1>
+            <h1>Generate a <br><span class="green">random password</span></h1>
             <p>Never use an insecure password again.</p>
-            <button onclick="generate()">Generate passwords</button>
+            <button id="gen"onclick="generate()">Generate passwords</button>
             <br>
             <span id="line"></span>
             <input type="text" id="length-input" value="15" min="1" max="20">
             <p id="limiter">limiter:</p>
             <br>
-            <div id="flex">
-                <h3 id="box1-El"></h3>
-                <h3 id="box2-El"></h3>
+            <div id="flex">      
+                <button class="buttonclick" onclick="copybox1()"><h3 id="box1-El"></h3></button>
+                <button class="buttonclick" onclick="copybox2()"><h3 id="box2-El"></h3></button>
             </div>
             <script src="index.js"></script>   
         </div>   

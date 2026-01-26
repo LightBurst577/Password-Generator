@@ -29,7 +29,7 @@ p {
     margin: -10px 0px 0px 0px;
 }
 
-button {
+#gen {
     margin-top: 30px;
     border-radius: 6px;
     padding: 9px 17px 9px 15px;
@@ -88,4 +88,13 @@ input {
     opacity: 0.5;
     margin: -25px 0 10px 0;
     font-size: 20px;
+}
+
+.buttonclick {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background: #1F2937;
+    border-radius: 10px;
 }
